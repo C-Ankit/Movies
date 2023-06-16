@@ -4,7 +4,7 @@ import streamlit as st
 import pickle
 import pandas
 import requests
-from annotated_text import annotated_text
+
 
 
 def fetch_poster(movie_id):
@@ -62,4 +62,4 @@ if st.button('Recommend'):
         st.image(posters[4])
 st.empty()
 st.empty()
-annotated_text("__By__ ", ("Ankit","Chaurasiya"))
+st.caption("With Love from Ankit Chauraiya")
