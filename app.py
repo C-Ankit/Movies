@@ -41,10 +41,11 @@ selected_movie_name = st.selectbox(
 'Enter a movie name that you liked',
 movies['title'].values)
 st.text("")
-st.text("")
 
 if st.button('Recommend'):
-    st.text("The Top Recommendations based on your previous experience are:")
+    st.text("")
+    st.subheader("The Top Recommendations based on your previous experience are:")
+    st.text("")
     names, posters = recommend(selected_movie_name)
 
     col1, col2, col3, col4, col5 = st.columns(5)
