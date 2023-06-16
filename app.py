@@ -24,7 +24,7 @@ def recommend(movie):
         movie_id_n = movies.iloc[i].movie_id
         recommended_movies.append(movies.iloc[i].title)
 
-        # fetch poster from AP
+        # fetch poster from API
         recommended_movies_posters.append(fetch_poster(movie_id_n))
     return recommended_movies, recommended_movies_posters
 
@@ -40,7 +40,9 @@ st.title('Movie Recommendation System')
 selected_movie_name = st.selectbox(
 'Enter a movie name that you liked',
 movies['title'].values)
-
+st.text("")
+st.text("")
+st.text("The Top Recommendations based on your previous experience are:")
 if st.button('Recommend'):
     names, posters = recommend(selected_movie_name)
 
@@ -60,6 +62,9 @@ if st.button('Recommend'):
     with col5:
         st.text(names[4])
         st.image(posters[4])
-st.empty()
-st.empty()
-st.caption("With Love from Ankit Chauraiya")
+st.text("")
+st.text("")
+st.text("")
+st.text("")
+st.text("")
+st.caption("Kaafi Mehnat lagi Deploy karne me")
