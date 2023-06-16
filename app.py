@@ -62,4 +62,4 @@ if st.button('Recommend'):
         st.image(posters[4])
 st.empty()
 st.empty()
-annotated_text("__By__ ", ("Ankit","Chaurasiya")
+annotated_text("__By__ ", ("Ankit","Chaurasiya"))
